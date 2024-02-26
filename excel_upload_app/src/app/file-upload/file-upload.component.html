@@ -1,0 +1,15 @@
+<input type="file" (change)="handleFileInput($event)">
+<button (click)="uploadFileToServer()">Upload</button>
+
+<table *ngIf="excelData.length > 0">
+  <thead>
+    <tr>
+      <th *ngFor="let header of excelData[0] | keyvalue">{{ header.key }}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of excelData">
+      <td *ngFor="let cell of row | keyvalue">{{ cell.value }}</td>
+    </tr>
+  </tbody>
+</table>
