@@ -1,15 +1,67 @@
+/* Estilos para el contenedor principal */
+.container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el input y el botón */
+input[type="file"] {
+  display: block;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+  width: calc(100% - 100px);
+}
+
+button {
+  display: inline-block;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para la tabla */
 table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
-  }
-  
-  table th, table td {
-    border: 1px solid #ccc;
-    padding: 8px;
-    text-align: left;
-  }
-  
-  table th {
-    background-color: #f2f2f2;
-  }
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: #007bff;
+  color: #fff;
+}
+
+td {
+  background-color: #ffffff; /* Color de fondo blanco por defecto */
+}
+
+tr:nth-child(even) td {
+  background-color: #e8e6e5e7 ; /* Color de fondo gris claro para filas pares */
+}
+
+/* Hover effect para las filas */
+tbody tr:hover {
+  background-color: #e9ecef;
+}
